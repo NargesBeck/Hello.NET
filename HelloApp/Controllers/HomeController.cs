@@ -6,7 +6,8 @@ namespace HelloApp.Controllers
 {
     public class HomeController : Controller
     {
-        [HttpGet(Name = "GetUserData")]
+        [HttpGet("GetUserData")]
+        [ProducesResponseType(200)]
         public IEnumerable<User> Get()
         {
             return default;
